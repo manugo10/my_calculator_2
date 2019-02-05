@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <h2>Calculadora de Emmanuel Lucio Urbina</h2>
+        <form id="calculator">
+            <p>
+                Número: <input type="text" name="number1" id="number1">
+            </p>
+            <p><button type="button" id="pow3">x^3</button></p>
+        </form>
+
+    </div>
+    <script>
+    let pow3 = document.querySelector("#pow3");
+    pow3.addEventListener("click", function () {
+        let value = document.querySelector("#number1");
+        value.value = Math.pow(value.value, 3);
+    });
+    </script>
+</body>
+</html>
