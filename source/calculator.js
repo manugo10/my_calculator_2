@@ -2,6 +2,11 @@ let pow2 = document.querySelector("#pow2");
 let pow3 = document.querySelector("#pow3");
 let pow4 = document.querySelector("#pow4");
 let sin = document.querySelector("#sinx");
+let inv = document.querySelector("#inv");
+inv.addEventListener("click", function () {
+    let value = document.querySelector("#number1");
+    value.value = parseFloat(1 / value.value).toFixed(9);
+});
 pow3.addEventListener("click", function () {
     let value = document.querySelector("#number1");
     value.value = pow(value.value, 3);
